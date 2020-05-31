@@ -16,21 +16,25 @@
       <div class="header-middle">
         <input type="search" value="Поиск по сайту">
         <ul>
-          <li><a href="">Войти</a></li>
+          <li class="unauthorized"><a href="">Войти</a></li>
+          <li class="authorized"><a href="">Валентин Петухов</a></li>
+          <li class="authorized"><a href="">Выйти</a></li>
           <li><a href="">Сравнить</a></li>
           <li><a href="">Корзина</a></li>
         </ul>
       </div>
       <div class="header-bottom">
-          <a href="">Каталог товаров</a>
-         <ul> 
-           <li><a href="">Экшн-камеры</a></li>
-          <li><a href="">Умные часы</a></li>
-          <li><a href="">Моноподы для селфи</a></li>
-          <li><a href="">Квадрокоптер</a></li>
-          <li><a href="">Фитнес-браслеты</a></li>
-          <li><a href="">Виртуальная реальность</a></li>
-        </ul>
+        <nav>
+          <h2>Каталог товаров</h2>
+          <ul>
+            <li><a href="">Экшн-камеры</a></li>
+            <li><a href="">Умные часы</a></li>
+            <li><a href="">Моноподы для селфи</a></li>
+            <li><a href="">Квадрокоптер</a></li>
+            <li><a href="">Фитнес-браслеты</a></li>
+            <li><a href="">Виртуальная реальность</a></li>
+          </ul>
+        </nav>
         <ul>
           <li><a href="">Доставка</a></li>
           <li><a href="">Гарантия</a></li>
@@ -93,8 +97,8 @@
         </ul>
       </div>
     </section>
-    <div class="container">
-      <div class="about-contacts">
+    <section class="about-contacts">
+      <div class="wrap-aboutcontacts">
         <section class="about">
           <h2>О нас</h2>
           <p>Огромный выбор гаджетов не оставит равнодушным гика,
@@ -117,7 +121,7 @@
           <button class="btn">Напишите нам</button>
         </section>
       </div>
-    </div>
+    </section>
   </main>
   <footer>
     <div class="container">
@@ -125,7 +129,9 @@
         <a><img src="https://via.placeholder.com/150x100"
             alt="Логотип Интернет магазина гаджетов с оригинальным дизайном"></a>
         <ul>
-          <li><a href="blank.html">Войти</a></li>
+          <li class="unauthorized"><a href="">Войти</a></li>
+          <li class="authorized"><a href="">Валентин Петухов</a></li>
+          <li class="authorized"><a href="">Выйти</a></li>
           <li><a href="blank.html">Сравнить</a></li>
           <li><a href="blank.html">Корзина</a></li>
         </ul>
@@ -141,23 +147,18 @@
         </div>
         <a href="tel:+7(495)495-95-95">Тел.: +7(495)495-95-95</a>
       </div>
-      <div class="footer-bottom">
-        <section class="socials">
-          <h2 class="visibility-hidden">Социальные страницы</h2>
-          <ul>
-            <li>
-              <a href="#">Вконтакте</a>
-            </li>
-            <li>
-              <a href="#">Фейсбук</a>
-            </li>
-            <li>
-              <a href="#">Инстаграм</a>
-            </li>
-          </ul>
-        </section>
-        <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="https://via.placeholder.com/150x100"
-            alt="Логотип HTML Academy"></a>
+      <div class="socials">
+        <ul>
+          <li>
+            <a href="#">Вконтакте</a>
+          </li>
+          <li>
+            <a href="#">Фейсбук</a>
+          </li>
+          <li>
+            <a href="#">Инстаграм</a>
+          </li>
+        </ul>
       </div>
     </div>
   </footer>
