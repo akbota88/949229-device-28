@@ -1,3 +1,235 @@
-.footer {
-    background-color: blue;
+/* Variables */
+
+:root {
+    --basic-black: #000000;
+    --basic-dark: #363636;
+    --basic-white: #FFFFFF;
+    --basic-gray: #464646;
+    --basic-half-gray: #7E7E7E;
+    --basic-gray-light: #E5E5E5;
+    --special-yellow: #F7E296;
+    --special-yellow-dark: #F0C52E;
+    --special-green: #91C92F;
+}
+
+@font-face {
+    font-style: normal;
+    font-weight: 300;
+    font-family: "Open Sans";
+    src: local("Open Sans"), url("../fonts/opensanslight.woff2") format("woff2"), url("../fonts/opensanslight.woff") format("woff");
+}
+
+@font-face {
+    font-style: normal;
+    font-weight: 300;
+    font-family: "Gilroy";
+    src: local("Gilroy"), url("../fonts/gilroylight.woff2") format("woff2"), url("../fonts/gilroylight.woff") format("woff");
+}
+
+@font-face {
+    font-style: normal;
+    font-weight: 800;
+    font-family: "Gilroy";
+    src: local("Gilroy"), url("../fonts/gilroyextrabold.woff2") format("woff2"), url("../fonts/gilroyextrabold.woff") format("woff");
+}
+
+body {
+    min-width: 1180px;
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 28px;
+    font-weight: 300;
+    color: var(--basic-black);
+    background-color: blanchedalmond;
+    width: 1440px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h2 {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.1em;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.container {
+    width: 1160px;
+    margin: 0 auto;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.header-bg {
+    background-color: #F7E296;
+    margin-top: 40px;
+}
+
+.header-container {
+    position: relative;
+    top: -20px;
+    width: 1040px;
+    margin: 0 auto;
+}
+
+.search {
+    width: 160px;
+    padding-left: 2px;
+    padding-left: 38px;
+    margin-top: 20px;
+    line-height: 15px;
+    border: none;
+    background-color: var(--special-yellow);
+    background: url(../img/icon_search.svg) no-repeat;
+    background-position: 0 4px;
+}
+
+.user {
+    display: inline-flex;
+    margin-left: 336px;
+}
+
+.user-in {
+    padding-left: 24px;
+    background: url(../img/header-user.svg) no-repeat;
+    background-position: 2px 6px;
+}
+
+.compare {
+    margin-left: 215px;
+    padding-left: 25px;
+    background: url(../img/comare.svg) no-repeat;
+    background-position: 1px 6px;
+}
+
+.basket {
+    margin-left: 42px;
+    padding-left: 23px;
+    background: url(../img/basket.svg) no-repeat;
+    background-position: 2px 5px;
+}
+
+.header-bottom {
+    display: inline-flex;
+    margin-top: 15px;
+}
+.header-bottom nav {
+    margin-right: 310px;
+}
+
+
+.slider-products {
+    width: 1024px;
+    margin: 0 auto;
+    background-color: chartreuse;
+}
+.slider-right_side {
+    display: inline-block;
+}
+.switch {
+    display: inline-block;
+}
+.slide-2, .slide-3 {
+    display: none;
+}
+
+.slider-title {
+    font-family: "Gilroy";
+    font-size: 47px;
+    font-weight: 800;
+    font-size: 47px;
+    line-height: 58px;
+}
+
+.slider-text {
+    font-family: Open Sans;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.popular-items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.popular-img {
+    margin-bottom: 40px;
+    width: 160px;
+    height: 160px;
+    background-color: #F7E296;
+    /* outline: 1px solid #000000; */
+}
+
+.virtualreality {
+    padding-top: 52px;
+    padding-left: 31px;
+}
+
+.monopods {
+    padding-top: 26px;
+    padding-left: 37.14px;
+}
+
+.actioncamera {
+    padding-top: 36px;
+    padding-left: 44px;
+}
+
+.fitness_bracelets {
+    padding-top: 47.86px;
+    padding-left: 27px;
+}
+
+.smart_watch {
+    padding-top: 31px;
+    padding-left: 52px;
+}
+
+.quadrocopters {
+    padding-top: 46px;
+    padding-left: 14px;
+}
+
+.popular-title {
+    margin-top: 40px;
+}
+
+.logos-ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.logos-ul li {
+    height: 100px;
 }

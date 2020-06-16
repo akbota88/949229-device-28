@@ -8,29 +8,32 @@
 </head>
 
 <body>
-  <header>
-    <div class="container">
-      <div class="header-top">
-        <a><img src="img/logo_header.svg" alt="Логотип Интернет магазина гаджетов с оригинальным дизайном"></a>
-      </div>
+  <header class="container header-bg">
+    <div class="header-container">
+      <a class="main-logo"><img src="img/logo_header.svg"
+          alt="Логотип Интернет магазина гаджетов с оригинальным дизайном"></a>
       <div class="header-middle">
-        <input type="search" value="Поиск по сайту">
-        <ul>
+        <form action="" method="POST">
+          <label for="search">
+            <input type="search" class="search" id="search" placeholder="Поиск по сайту">
+            <button type="submit" class="visually-hidden"><span>Найти</span></button>
+        </form>
+        <ul class="user">
           <li>
-            <a href="">Войти</a>
+            <a href="" class="user-in">Войти</a>
             <div class="authorization">
-              <a href="">Валентин Петухов</a>
-              <button>Выйти</button>
+              <a href="" class="visually-hidden">Валентин Петухов</a>
+              <button class="visually-hidden">Выйти</button>
             </div>
           </li>
-          <li><a href="">Сравнить</a></li>
-          <li><a href="">Корзина</a></li>
+          <li><a href="" class="compare">Сравнить</a></li>
+          <li><a href="" class="basket">Корзина</a></li>
         </ul>
       </div>
       <div class="header-bottom">
         <nav>
-          <h2>Каталог товаров</h2>
-          <ul>
+          <h2 class="uppercase">Каталог товаров</h2>
+          <ul class="visually-hidden">
             <li><a href="">Экшн-камеры</a></li>
             <li><a href="">Умные часы</a></li>
             <li><a href="">Моноподы для селфи</a></li>
@@ -40,9 +43,9 @@
           </ul>
         </nav>
         <ul>
-          <li><a href="">Доставка</a></li>
-          <li><a href="">Гарантия</a></li>
-          <li><a href="">Контакты</a></li>
+          <li><a href="" class="uppercase">Доставка</a></li>
+          <li><a href="" class="uppercase">Гарантия</a></li>
+          <li><a href="" class="uppercase">Контакты</a></li>
         </ul>
       </div>
     </div>
