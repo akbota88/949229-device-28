@@ -67,51 +67,60 @@
         <section class="cost">
           <h3 class="visually-hidden">Стоимость</h3>
         </section>
-        <section class="color">
-          <h3 class="visually-hidden">Цвет</h3>
-          <fieldset>
-            <legend>Цвет</legend>
-            <ul role="none">
-              <li>
-                <label for="black">Чёрный</label>
-                <input type="checkbox" name="black" id="black">
-              </li>
-              <li>
-                <label for="white">Белый</label>
-                <input type="checkbox" name="white" id="white">
-              </li>
-              <li>
-                <label for="blue">Синий</label>
-                <input type="checkbox" name="blue" id="blue">
-              </li>
-              <li>
-                <label for="red">Красный</label>
-                <input type="checkbox" name="red" id="red">
-              </li>
-              <li>
-                <label for="pink">Розовый</label>
-                <input type="checkbox" name="pink" id="pink">
-              </li>
-            </ul>
-          </fieldset>
-        </section>
-        <section class="bluetooth">
-          <h3 class="visually-hidden">Bluetooth</h3>
-          <fieldset>
-            <legend>Bluetooth</legend>
-            <ul role="none">
-              <li>
-                <label for="there's">Есть</label>
-                <input type="radio" checked name="Bluetooth" id="there's" value="there's">
-              </li>
-              <li>
-                <label for="nope">Нет</label>
-                <input type="radio" name="Bluetooth" id="nope" value="nope">
-              </li>
+        <section>
+          <h2 class="visually-hidden">Фильтр товаров</h2>
+          <form action="https://echo.htmlacademy.ru" method="get">
+            <fieldset>
+              <legend>Стоимость</legend>
+              от 0
+              <input type="range" name="cost" id="cost" min="0" max="8000" style="1000"> 
+              до 5000
+            </fieldset>
+            <fieldset>
+              <legend>Цвет</legend>
+              <ul role="none">
+                <li>
+                  <input type="checkbox" name="black" id="filter-black">
+                  <label for="filter-black">Чёрный</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="white" id="filter-white">
+                  <label for="filter-white">Белый</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="blue" id="filter-blue">
+                  <label for="filter-blue">Синий</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="red" id="filter-red">
+                  <label for="filter-red">Красный</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="pink" id="filter-pink">
+                  <label for="filter-pink">Розовый</label>
+                </li>
               </ul>
-              <input type="submit" class="button" value="Показать">
-          </fieldset>
+            </fieldset>
+            <fieldset>
+              <legend>Bluetooth</legend>
+              <ul role="none">
+                <li>
+                  <label for="filter-bluetooth-available">Есть</label>
+                  <input type="radio" name="bluetooth" id="filter-bluetooth-available" value="bluetooth-available" checked>
+                </li>
+                <li>
+                  <label for="filter-bluetooth-nope">Нет</label>
+                  <input type="radio" name="bluetooth" id="filter-bluetooth-nope" value="bluetooth-nope">
+                </li>
+              </ul>
+              <button type="submit">Показать</button>
+            </fieldset>
+          </form>
         </section>
+
+
+
+      </section>
       </section>
       <section class="sorting-products">
         <h2 class="visually-hidden">Сортировка товаров</h2>
