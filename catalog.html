@@ -4,46 +4,71 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <header class="container">
+  <header class="main-header container">
     <div class="header-top">
-      <a href="index.html"><img src="img/logo_header.svg" width="163" height="35"
-          alt="Логотип Интернет магазина гаджетов с оригинальным дизайном"></a>
+      <a href="index.html">
+        <img src="img/logo_header.svg" width="163" height="35"
+          alt="Логотип Интернет магазина гаджетов с оригинальным дизайном">
+      </a>
     </div>
     <div class="header-middle">
       <input type="search" value="Поиск по сайту" id="search">
       <label for="search" class="visually-hidden">Найти</label>
-      <ul>
+      <ul class="user-navigation">
         <li>
           <a href="">Войти</a>
           <div class="authorization">
             <a href="">Валентин Петухов</a>
-            <button>Выйти</button>
+            <button type="button">Выйти</button>
           </div>
         </li>
-        <li><a href="">Сравнить</a></li>
-        <li><a href="">Корзина</a></li>
+        <li>
+          <a href="#">Сравнить</a>
+        </li>
+        <li>
+          <a href="#">Корзина</a>
+        </li>
       </ul>
     </div>
     <div class="header-bottom">
       <nav>
         <h2>Каталог товаров</h2>
-        <ul>
-          <li><a href="">Экшн-камеры</a></li>
-          <li><a href="">Умные часы</a></li>
-          <li><a href="">Моноподы для селфи</a></li>
-          <li><a href="">Квадрокоптер</a></li>
-          <li><a href="">Фитнес-браслеты</a></li>
-          <li><a href="">Виртуальная реальность</a></li>
+        <ul class="catalog">
+          <li>
+            <a href="#">Экшн-камеры</a>
+          </li>
+          <li>
+            <a href="#">Умные часы</a>
+          </li>
+          <li>
+            <a href="#">Моноподы для селфи</a>
+          </li>
+          <li>
+            <a href="#">Квадрокоптер</a>
+          </li>
+          <li>
+            <a href="#">Фитнес-браслеты</a>
+          </li>
+          <li>
+            <a href="#">Виртуальная реальность</a>
+          </li>
         </ul>
       </nav>
       <ul>
-        <li><a href="">Доставка</a></li>
-        <li><a href="">Гарантия</a></li>
-        <li><a href="">Контакты</a></li>
+        <li>
+          <a href="#">Доставка</a>
+        </li>
+        <li>
+          <a href="#">Гарантия</a>
+        </li>
+        <li>
+          <a href="#">Контакты</a>
+        </li>
       </ul>
     </div>
   </header>
@@ -181,43 +206,58 @@
       </li>
     </ul>
   </main>
-  <footer class="container">
-    <div class="footer-top">
-      <a><img src="img/logo_footer.svg" alt="Логотип Интернет магазина гаджетов с оригинальным дизайном"></a>
-      <ul>
-        <li>
-          <a href="">Войти</a>
-          <div class="authorization">
-            <a href="">Валентин Петухов</a>
-            <button>Выйти</button>
-          </div>
-        </li>
-        <li><a href="">Сравнить</a></li>
-        <li><a href="">Корзина</a></li>
-      </ul>
-    </div>
-    <div class="footer-middle">
-      <span>г. Москва, ул. Строителей, 15</span>
-      <ul>
-        <li><a href="">Доставка</a></li>
-        <li><a href="">Гарантия</a></li>
-        <li><a href="">Контакты</a></li>
-      </ul>
-      <a href="">Тел.: +7 (495) 495-95-95</a>
-    </div>
-    <div class="footer-bottom">
-      <ul>
-        <li>
-          <a href=""><img src="img/simple-icons_facebook.svg" width="32" height="32" alt="Иконка Фейсбук">Фейсбук</a>
-        </li>
-        <li>
-          <a href=""><img src="img/icon_instagram.svg" width="32" height="32" alt="Иконка Инстаграм">Инстаграм</a>
-        </li>
-        <li>
-          <a href="#"><img src="img/tw.svg" width="32" height="32" alt="Иконка твиттера">Твиттер</a>
-        </li>
-      </ul>
-      <a href=""><img src="img/htmlacdemy.svg" width="27" height="34" alt="icon-htmlacdemy"></a>
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-top">
+        <a>
+          <img src="img/logo_footer.svg" width="164" height="35" alt="Логотип Интернет магазина гаджетов с оригинальным дизайном">
+        </a>
+        <ul class="user-navigation footer-navigation">
+          <li>
+            <a href="#">Войти</a>
+            <div class="authorization">
+              <a href="#">Валентин Петухов</a>
+              <button class="user-navigation">Выйти</button>
+            </div>
+          </li>
+          <li><a href="#">Сравнить</a></li>
+          <li><a href="#">Корзина</a></li>
+        </ul>
+      </div>
+      <div class="footer-middle">
+        <span>г. Москва, ул. Строителей, 15</span>
+        <div class="wrapper">
+          <ul class="offer footer-offer">
+            <li>
+              <a href="#">Доставка</a>
+            </li>
+            <li>
+              <a href="#">Гарантия</a>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <a href="tel:+7(495)495-95-95">Тел.: +7(495)495-95-95</a>
+      </div>
+      <div class="footer-bottom">
+        <div class="rectangle"></div>
+        <div class="socials">
+          <ul class="social-items">
+            <li>
+              <a href="#"><img src="img/simple-icons_facebook.svg" width="32" height="32" alt="Иконка Фейсбук"></a>
+            </li>
+            <li>
+              <a href="#"><img src="img/icon_instagram.svg" width="32" height="32" alt="Иконка Инстаграм"></a>
+            </li>
+            <li>
+              <a href="#"><img src="img/tw.svg" width="32" height="32" alt="Иконка твиттера"></a>
+            </li>
+          </ul>
+        </div>
+        <a href="#"><img src="img/htmlacdemy.svg" width="27" height="34" alt="icon-htmlacdemy"></a>
+      </div>
     </div>
   </footer>
 </body>
