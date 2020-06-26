@@ -79,12 +79,14 @@ img {
 
 .main-header {
     background-color: var(--special-yellow-dark);
+    border: none;
+    color: var(--basic-black);
+  
 }
 
 .main-header button {
     background-color: transparent;
-    border: none;
-    color: var(--basic-black);
+   
 }
 
 .user-navigation {
@@ -180,7 +182,10 @@ nav h2: {
     filter: grayscale(1);
     opacity: 0.3;
 }
-
+.logo-items img:hover {
+    filter: grayscale(0);
+    opacity: 1;
+}
 .button span {
     font: inherit;
     font-weight: 800;
