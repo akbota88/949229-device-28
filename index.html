@@ -6,44 +6,45 @@
   <title>HTML Academy: Девайс</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-  <header>
-    <div class="container">
-      <div class="header-top">
-        <a><img src="img/logo_header.svg" alt="Логотип Интернет магазина гаджетов с оригинальным дизайном"></a>
-      </div>
-      <div class="header-middle">
-        <input type="search" value="Поиск по сайту">
+  <header class="container">
+    <div class="header-top">
+      <a><img src="img/logo_header.svg" width="163" height="35"
+          alt="Логотип Интернет магазина гаджетов с оригинальным дизайном"></a>
+    </div>
+    <div class="header-middle">
+      <input type="search" value="Поиск по сайту" id="search">
+      <label for="search" class="visually-hidden">Найти</label>
+      <ul>
+        <li>
+          <a href="">Войти</a>
+          <div class="authorization">
+            <a href="">Валентин Петухов</a>
+            <button type="button">Выйти</button>
+          </div>
+        </li>
+        <li><a href="">Сравнить</a></li>
+        <li><a href="">Корзина</a></li>
+      </ul>
+    </div>
+    <div class="header-bottom">
+      <nav>
+        <h2>Каталог товаров</h2>
         <ul>
-          <li>
-            <a href="">Войти</a>
-            <div class="authorization">
-              <a href="">Валентин Петухов</a>
-              <button>Выйти</button>
-            </div>
-          </li>
-          <li><a href="">Сравнить</a></li>
-          <li><a href="">Корзина</a></li>
+          <li><a href="">Экшн-камеры</a></li>
+          <li><a href="">Умные часы</a></li>
+          <li><a href="">Моноподы для селфи</a></li>
+          <li><a href="">Квадрокоптер</a></li>
+          <li><a href="">Фитнес-браслеты</a></li>
+          <li><a href="">Виртуальная реальность</a></li>
         </ul>
-      </div>
-      <div class="header-bottom">
-        <nav>
-          <h2>Каталог товаров</h2>
-          <ul>
-            <li><a href="">Экшн-камеры</a></li>
-            <li><a href="">Умные часы</a></li>
-            <li><a href="">Моноподы для селфи</a></li>
-            <li><a href="">Квадрокоптер</a></li>
-            <li><a href="">Фитнес-браслеты</a></li>
-            <li><a href="">Виртуальная реальность</a></li>
-          </ul>
-        </nav>
-        <ul>
-          <li><a href="">Доставка</a></li>
-          <li><a href="">Гарантия</a></li>
-          <li><a href="">Контакты</a></li>
-        </ul>
-      </div>
+      </nav>
+      <ul>
+        <li><a href="">Доставка</a></li>
+        <li><a href="">Гарантия</a></li>
+        <li><a href="">Контакты</a></li>
+      </ul>
     </div>
   </header>
   <main>
@@ -59,11 +60,11 @@
           <p>Делай селфи, как Бен Стиллер!</p>
           <p>Самая длинная палка для селфи доступна в нашем магазине.
             Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-            <div class="switch">
-              <button type="button"></button cheked>
-              <button type="button"></button>
-              <button type="button"></button>
-            </div>
+          <div class="switch">
+            <button type="button" cheсked></button>
+            <button type="button"></button>
+            <button type="button"></button>
+          </div>
         </section>
         <section class="slide-2">
           <h3 class="visually-hidden">Мотивирующий фитнес-браслет.</h3>
@@ -83,18 +84,16 @@
         </section>
       </div>
     </section>
-    <section class="popular">
+    <section class="popular container">
       <h2 class="visually-hidden">Популярное</h2>
-      <div class="container">
-        <ul>
-          <li><a href=""><img src="img/virtualreality.svg" alt=""> Виртуальная реальность</a></li>
-          <li><a href=""><img src="img/monopods.svg" alt=""> Моноподы для селфи</a></li>
-          <li><a href=""><img src="img/actioncamera.svg" alt=""> Экшн-камеры</a></li>
-          <li><a href=""><img src="img/fitness_bracelets.svg" alt=""> Фитнес-браслеты</a></li>
-          <li><a href=""><img src="img/smart_watch.svg" alt=""> Умные часы</a></li>
-          <li><a href=""><img src="img/quadrocopters.svg" alt=""> Квадрокоптеры</a></li>
-        </ul>
-      </div>
+      <ul>
+        <li><a href=""><img src="img/virtualreality.svg" alt=""> Виртуальная реальность</a></li>
+        <li><a href=""><img src="img/monopods.svg" alt=""> Моноподы для селфи</a></li>
+        <li><a href=""><img src="img/actioncamera.svg" alt=""> Экшн-камеры</a></li>
+        <li><a href=""><img src="img/fitness_bracelets.svg" alt=""> Фитнес-браслеты</a></li>
+        <li><a href=""><img src="img/smart_watch.svg" alt=""> Умные часы</a></li>
+        <li><a href=""><img src="img/quadrocopters.svg" alt=""> Квадрокоптеры</a></li>
+      </ul>
     </section>
     <section class="slider-services">
       <h2 class="visually-hidden">Сервисы</h2>
@@ -202,30 +201,34 @@
       </div>
     </div>
   </footer>
-  <div class="modal-background">
-    <div id="modalwindow_write-us" class="modal-write_us">
-      <form>
-        <label>
-          Ваше Имя:
-          <input type="text" name="name" value="Имя Фамилия">
-        </label>
-        <label>
-          Ваш e-mail:
-          <input type="email" name="e-mail" value="email@example.com">
-        </label>
+  <section>
+    <h2>Напишите нам</h2>
+    <form>
+      <p>
+        <label for="name">Ваше Имя:</label>
+        <input type="text" name="name" id="name" placeholder="Имя Фамилия">
+      </p>
+      <p>
+        <label for="email">Ваш e-mail:</label>
+        <input type="email" name="e-mail" id="email" placeholder="email@example.com">
+      </p>
+      <p>
+        <label for="text-field">Текст письма:</label>
         <textarea name="text" id="text-field">В свободной форме</textarea>
-        <input type="submit" value="Отправить">
-        <button type="button" class="button"><span class="visually-hidden">Закрыть карту</span></button>
-      </form>
-    </div>
-  </div>
-  <div class="modal-background">
-    <div id="modalwindow_map" class="modal-map">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779976!2d37.52742931535359!3d55.68703098053581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjywgMTE5MzEx!5e0!3m2!1sru!2skz!4v1591378785444!5m2!1sru!2skz"
-        width="994" height="593" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-      <button type="button" class="button-map"><span class="visually-hidden">Закрыть карту</span></button>
-    </div>
-  </div>
+      </p>
+      <button type="submit">Отправить</button>
+    </form>
+    <button type="button">Закрыть</button>
+  </section>
+  <section>
+    <h2>Карта</h2>
+    <!-- Здесь будет карта -->
+    <button type="button">Закрыть</button>
+  </section>
+
+
+
+
 </body>
+
 </html>
