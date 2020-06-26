@@ -80,8 +80,6 @@ img {
 .main-header {
     background-color: var(--special-yellow-dark);
     border: none;
-    color: var(--basic-black);
-  
 }
 
 .main-header button {
