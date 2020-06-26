@@ -10,8 +10,9 @@
 <body>
   <header class="container">
     <div class="header-top">
-      <a><img src="img/logo_header.svg" width="163" height="35"
-          alt="Логотип Интернет магазина гаджетов с оригинальным дизайном"></a>
+      <a>
+        <img src="img/logo_header.svg" width="163" height="35" alt="Логотип Интернет магазина гаджетов с оригинальным дизайном">
+      </a>
     </div>
     <div class="header-middle">
       <input type="search" value="Поиск по сайту" id="search">
@@ -87,12 +88,20 @@
     <section class="popular container">
       <h2 class="visually-hidden">Популярное</h2>
       <ul>
-        <li><a href=""><img src="img/virtualreality.svg" alt=""> Виртуальная реальность</a></li>
-        <li><a href=""><img src="img/monopods.svg" alt=""> Моноподы для селфи</a></li>
-        <li><a href=""><img src="img/actioncamera.svg" alt=""> Экшн-камеры</a></li>
-        <li><a href=""><img src="img/fitness_bracelets.svg" alt=""> Фитнес-браслеты</a></li>
-        <li><a href=""><img src="img/smart_watch.svg" alt=""> Умные часы</a></li>
-        <li><a href=""><img src="img/quadrocopters.svg" alt=""> Квадрокоптеры</a></li>
+        <li>
+          <a href="#">
+            <img src="img/virtualreality.svg" alt="">Виртуальная реальность</a>
+          </li>
+        <li>
+          <a href="#">
+            <img src="img/monopods.svg" alt="">Моноподы для селфи</a>
+        </li>
+        <li><a href="#">
+          <img src="img/actioncamera.svg" alt="">Экшн-камеры
+        </a></li>
+        <li><a href="#"><img src="img/fitness_bracelets.svg" alt="">Фитнес-браслеты</a></li>
+        <li><a href="#"><img src="img/smart_watch.svg" alt=""> Умные часы</a></li>
+        <li><a href="#"><img src="img/quadrocopters.svg" alt=""> Квадрокоптеры</a></li>
       </ul>
     </section>
     <section class="slider-services">
@@ -203,19 +212,23 @@
   </footer>
   <section>
     <h2>Напишите нам</h2>
-    <form>
-      <p>
-        <label for="name">Ваше Имя:</label>
-        <input type="text" name="name" id="name" placeholder="Имя Фамилия">
-      </p>
-      <p>
-        <label for="email">Ваш e-mail:</label>
-        <input type="email" name="e-mail" id="email" placeholder="email@example.com">
-      </p>
-      <p>
-        <label for="text-field">Текст письма:</label>
-        <textarea name="text" id="text-field">В свободной форме</textarea>
-      </p>
+    <form action="" method="post">
+      <div class="form-row">
+        <p>
+          <label for="name">Ваше Имя:</label>
+          <input type="text" name="name" id="name" placeholder="Имя Фамилия">
+        </p>
+        <p>
+          <label for="email">Ваш e-mail:</label>
+          <input type="email" name="e-mail" id="email" placeholder="email@example.com">
+        </p>
+      </div>
+      <div class="form-row">
+        <p>
+          <label for="text-field">Текст письма:</label>
+          <textarea name="text" id="text-field">В свободной форме</textarea>
+        </p>
+      </div>
       <button type="submit">Отправить</button>
     </form>
     <button type="button">Закрыть</button>
@@ -223,6 +236,9 @@
   <section>
     <h2>Карта</h2>
     <!-- Здесь будет карта -->
+    <div>
+      <iframe src="" frameborder="0"></iframe>
+    </div>
     <button type="button">Закрыть</button>
   </section>
 
