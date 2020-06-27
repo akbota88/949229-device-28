@@ -34,21 +34,29 @@
 }
 
 body {
+    min-width: 1180px;
     margin: 0;
-    font-family: "Open Sans", Arial, Helvetica, sans-serif;
-    color: var(--basic-black);
+    padding: 0;
+    font-family: "Gilroy", Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    font-style: normal;
+    line-height: 1;
     /* в конце удалить */
     width: 1440px;
 }
 
 a {
-    color: #000000;
     text-decoration: none;
 }
 
 img {
     max-width: 100%;
     height: auto;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
 }
 
 .visually-hidden {
@@ -62,17 +70,199 @@ img {
     overflow: hidden;
 }
 
+/* header */
+
 .container {
     width: 1160px;
     margin: 0 auto;
 }
 
-.uppercase {
-    text-transform: uppercase;
+.main-header {
+    background-color: var(--special-yellow-dark);
+    border: none;
+}
+
+.main-header button {
+    background-color: transparent;
+   
+}
+
+.user-navigation {
+    list-style: none;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
     font-style: normal;
-    font-size: 18px;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.user-navigation a {
+    color: var(--basic-black);
+}
+
+.user-navigation a:hover {
+    opacity: 0.5;
+}
+
+.user-navigation a:active {
+    opacity: 0.3;
+}
+
+.catalog {
+    list-style: none;
+}
+
+.catalog a {
+    color: var(--basic-black);
+}
+
+nav h2: {
+    text-transform: uppercase;
+}
+.switch button {
+    padding: 0;
+    width: 12px;
+    height: 12px;
+    border: 1px solid var(--basic-black);
+    border-radius: 50%;
+    background-color: transparent;
+    box-sizing: border-box;
+    margin-left: 18px;
+}
+
+.offer {
+    list-style: none;
+}
+
+.offer a {
+    color: var(--basic-black)
+}
+
+.index-column h2 {
+    font-size: 47px;
+    line-height: 58px;
+    letter-spacing: 0.2em;
+}
+
+.popular {
+    list-style: none;
+}
+
+.popular a {
+    width: 160px;
+    height: 160px;
+    color: var(--basic-black);
+}
+
+.delivery-items {
+    list-style: none;
+}
+
+.delivery-items li {
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.button {
+    width: 260px;
+    height: 8px;
+    border: none;
+    background-color: var(--special-yellow-dark);
+}
+
+/* Логотипы */
+
+.logo-items {
+    list-style: none;
+}
+
+.logo-items img {
+    filter: grayscale(1);
+    opacity: 0.3;
+}
+.logo-items img:hover {
+    filter: grayscale(0);
+    opacity: 1;
+}
+.button span {
+    font: inherit;
     font-weight: 800;
-    font-family: "Gilroy";
-    letter-spacing: 0.1em;
+    font-size: 18px;
     line-height: 22px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    position: relative;
+    text-align: center;
+    top: -8px;
+}
+
+.button:hover {
+    height: 40px;
+    padding-top: 14px;
+}
+
+.button:active span {
+    height: 40px;
+    padding-top: 14px;
+    opacity: 0.3;
+}
+
+.button-slider {
+    width: 160px;
+}
+
+.button-slider:hover, .button-slider:focus {
+    height: 40px;
+    padding-top: 14px;
+    border: none
+}
+
+.button-slider:active {
+    width: 280px;
+    height: 40px;
+    color: var(--special-yellow-dark);
+    background-color: var(--basic-black);
+    border: none;
+}
+
+.slider-2 {
+    background-color: var(--basic-gray-light);
+}
+
+.main-footer {
+    background-color: var(--basic-dark);
+}
+
+.footer-navigation a, .footer-offer a, .footer-middle span, .footer-middle a {
+    color: var(--basic-white);
+}
+
+.main-footer button {
+    background-color: transparent;
+    border: none;
+    color: var(--basic-white);
+}
+
+.rectangle {
+    width: 80px;
+    height: 7px;
+    background-color: var(--special-yellow-dark);
+}
+
+.social-items {
+    list-style: none;
+}
+
+.form {
+    display: none
+}
+
+.map {
+    display: none
+}
+
+.rectangle-slider {
+    width: 7px;
+    height: 320px;
+    background-color: var(--basic-black);
 }
