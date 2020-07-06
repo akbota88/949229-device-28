@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="utf-8">
@@ -8,11 +8,12 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="page-body">
   <header class="main-header container">
     <div class="header-top">
       <a>
-        <img src="img/logo_header.svg" width="163" height="35" alt="Логотип Интернет магазина гаджетов с оригинальным дизайном">
+        <img src="img/logo_header.svg" width="163" height="35"
+          alt="Логотип Интернет магазина гаджетов с оригинальным дизайном">
       </a>
     </div>
     <div class="header-middle">
@@ -23,7 +24,7 @@
           <a href="">Войти</a>
           <div class="authorization">
             <a href="">Валентин Петухов</a>
-            <button type="button">Выйти</button>
+            <button type="device-button">Выйти</button>
           </div>
         </li>
         <li>
@@ -78,13 +79,13 @@
     <section class="slider-products">
       <h2 class="visually-hidden">Промо товары</h2>
       <div class="slider-products">
-        <section class="slide-1">
+        <section class="slide">
           <h3 class="visually-hidden">Самая длинная палка для селфи.</h3>
           <img src="img/slider_first.png" alt="">
           <p>Делай селфи, как Бен Стиллер!</p>
           <p>Самая длинная палка для селфи доступна в нашем магазине.
             Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-          <button class="button">
+          <button class="device-button">
             <span>Подробнее</span>
           </button>
           <div class="switch">
@@ -93,27 +94,27 @@
             <button type="button"></button>
           </div>
         </section>
-        <section class="slide-2">
+        <section class="slide">
           <h3 class="visually-hidden">Мотивирующий фитнес-браслет.</h3>
           <img src="img/slider-second.png" alt="Картинка фитнес-браслета">
           <p>Худеем правильно!</p>
           <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-          <button class="button">
+          <button class="device-button">
             <span>Подробнее</span>
           </button>
           <div class="switch">
-            <button type="button" cheсked></button>
-            <button type="button"></button>
-            <button type="button"></button>
+            <button type="device-button" cheсked></button>
+            <button type="device-button"></button>
+            <button type="device-button"></button>
           </div>
         </section>
-        <section class="slide-3">
+        <section class="slide">
           <h3 class="visually-hidden">Квадрокоптер с лазером.</h3>
           <img src="img/slider_third.png" alt="Картинка квадрокоптера с лазером">
           <p>Порхает как бабочка, жалит как пчела!</p>
           <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную
             камеру.</p>
-          <button class="button">
+          <button class="device-button">
             <span>Подробнее</span>
           </button>
           <div class="switch">
@@ -129,51 +130,56 @@
       <h2 class="visually-hidden">Популярное</h2>
       <ul class="popular">
         <li>
-          <a href="#">
-            <img src="img/virtualreality.svg" width="97" height="55" alt="Картинка блока виртуальная реальность">
-            <span>Виртуальная реальность</span>
-          </a>
+          <div class="popular-img">
+            <a href="#" >
+              <img src="img/virtualreality.svg" width="97" height="55" alt="Картинка блока виртуальная реальность">
+            </a>
+          </div>
+          <a href=""><span>Виртуальная реальность</span></a>
         </li>
         <li>
           <a href="#">
             <img src="img/monopods.svg" width="86" height="117" alt="Картинка блока моноподы для селфи">Моноподы для
-            селфи</a>
+            селфи
+          </a>
         </li>
         <li>
           <a href="#">
-            <img src="img/actioncamera.svg" width="86" height="117" alt="Картинка блока экшн-камеры">Экшн-камеры</a>
+            <img src="img/actioncamera.svg" width="86" height="117" alt="Картинка блока экшн-камеры">Экшн-камеры
+          </a>
         </li>
         <li>
           <a href="#">
             <img src="img/fitness_bracelets.svg" width="71" height="87"
-              alt="Картинка блока фитнес-браслеты">Фитнес-браслеты</a>
+              alt="Картинка блока фитнес-браслеты">Фитнес-браслеты
+          </a>
         </li>
         <li>
           <a href="#">
-            <img src="img/smart_watch.svg" width="56" height="98" alt="Картинка блока умные часы">Умные часы</a>
+            <img src="img/smart_watch.svg" width="56" height="98" alt="Картинка блока умные часы">Умные часы
+          </a>
         </li>
         <li>
           <a href="#">
-            <img src="img/quadrocopters.svg" width="132" height="69"
-              alt="Картинка блока квадрокоптеры">Квадрокоптеры</a>
+            <img src="img/quadrocopters.svg" width="132" height="69" alt="Картинка блока квадрокоптеры">Квадрокоптеры
+          </a>
         </li>
       </ul>
     </section>
-    
+
     <section class="slider-2">
       <div class="container">
         <div class="slider-buttons">
-          <button class="button button-slider">
+          <button class="device-button button-slider">
             <span>Доставка</span>
           </button>
-          <button class="button button-slider">
+          <button class="device-button button-slider">
             <span>Гарантия</span>
           </button>
-          <button class="button button-slider">
+          <button class="device-button button-slider">
             <span>Кредит</span>
           </button>
         </div>
-        <div class="rectangle-slider"></div>
         <div class="slider-services">
           <section class="delivery">
             <h2 class="visually-hidden">Доставка</h3>
@@ -219,31 +225,25 @@
 
     <div class="index-columns container">
       <section class="about">
-        <div class="rectangle"></div>
         <h2>О нас</h2>
-        <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-        <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными
+        <p>Огромный выбор гаджетов не оставит равнодушным гика, <br> который есть в каждом из нас.</p>
+        <p>Мы можем доставить ваш товар в самые отдаленные точки <br> России! DEVICE работает со многими транспортными
           компаниями:</p>
         <ul class="delivery-items">
           <li>Деловые линии</li>
           <li>Автотрейдинг</li>
           <li>ЖелДорЭкспедиция</li>
         </ul>
-        <button class="button">
-          <span>Подробнее о нас</span>
-        </button>
+        <button class="device-button">Подробнее о нас</button>
       </section>
       <section class="contacts">
-        <div class="rectangle"></div>
         <h2>Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки.
           Всякое бывает.</p>
         <a href="#">
           <img src="img/map_1.png" width="560" height="222" alt="Картика карты">
         </a>
-        <button class="button">
-          <span>Напишите нам</span>
-        </button>
+        <button class="device-button">Напишите нам</button>
       </section>
     </div>
   </main>

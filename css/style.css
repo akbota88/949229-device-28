@@ -39,7 +39,7 @@ body {
     padding: 0;
     font-family: "Gilroy", Arial, Helvetica, sans-serif;
     font-size: 18px;
-    font-weight: 800;
+    font-weight: 400;
     font-style: normal;
     line-height: 1;
     /* в конце удалить */
@@ -59,6 +59,19 @@ img {
     box-sizing: border-box;
 }
 
+/* grid */
+
+.page {
+    height: 100%;
+}
+
+.page-body {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    align-content: start;
+}
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -68,6 +81,38 @@ img {
     padding: 0;
     clip: rect(0 0 0 0);
     overflow: hidden;
+}
+
+.device-button {
+    position: relative;
+    min-width: 260px;
+    border: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 18px;
+    letter-spacing: 0.2em;
+    line-height: 22px;
+}
+
+.device-button::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    height: 8px;
+    background-color: var(--special-yellow-dark);
+    z-index: -1;
+}
+
+.device-button:hover::after {
+    top: 0;
+    transform: none;
+    height: 100%;
 }
 
 /* header */
@@ -80,11 +125,17 @@ img {
 .main-header {
     background-color: var(--special-yellow-dark);
     border: none;
+    margin-bottom: 44px;
 }
 
 .main-header button {
     background-color: transparent;
-   
+}
+
+.header-middle input {
+    background-color: transparent;
+    text-align: right;
+    border: none;
 }
 
 .user-navigation {
@@ -101,7 +152,7 @@ img {
 }
 
 .user-navigation a:hover {
-    opacity: 0.5;
+    opacity: 0.6;
 }
 
 .user-navigation a:active {
@@ -109,6 +160,7 @@ img {
 }
 
 .catalog {
+    display: none;
     list-style: none;
 }
 
@@ -116,9 +168,14 @@ img {
     color: var(--basic-black);
 }
 
-nav h2: {
+nav h2 {
     text-transform: uppercase;
 }
+
+.slide {
+    display: none;
+}
+
 .switch button {
     padding: 0;
     width: 12px;
@@ -149,9 +206,10 @@ nav h2: {
 }
 
 .popular a {
-    width: 160px;
-    height: 160px;
     color: var(--basic-black);
+    font-weight: 800;
+    line-height: 22px;
+    letter-spacing: 0.05em;
 }
 
 .delivery-items {
@@ -163,16 +221,10 @@ nav h2: {
     line-height: 28px;
 }
 
-.button {
-    width: 260px;
-    height: 8px;
-    border: none;
-    background-color: var(--special-yellow-dark);
-}
-
 /* Логотипы */
 
 .logo-items {
+    display: flex;
     list-style: none;
 }
 
@@ -180,49 +232,61 @@ nav h2: {
     filter: grayscale(1);
     opacity: 0.3;
 }
+
 .logo-items img:hover {
     filter: grayscale(0);
     opacity: 1;
 }
-.button span {
-    font: inherit;
+
+/* index-columns */
+
+.index-columns {
+    display: flex;
+}
+
+.index-columns p {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 28px;
+}
+
+.index-columns p {
+    margin-bottom: 40px;
+}
+
+.about p:last-of-type {
+    margin-bottom: 60px;
+}
+
+.index-columns h2 {
     font-weight: 800;
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 47px;
+    line-height: 58px;
     letter-spacing: 0.2em;
-    text-transform: uppercase;
-    position: relative;
-    text-align: center;
-    top: -8px;
 }
 
-.button:hover {
-    height: 40px;
-    padding-top: 14px;
+.delivery-items {
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 78px;
+}
+.delivery-items li {
+    margin-bottom: 16px;
 }
 
-.button:active span {
-    height: 40px;
-    padding-top: 14px;
-    opacity: 0.3;
+.about {
+    min-width: 473px;
+    margin-right: 127px;
 }
 
+.contacts img {
+    margin-bottom: 80px;
+}
 .button-slider {
     width: 160px;
-}
-
-.button-slider:hover, .button-slider:focus {
-    height: 40px;
-    padding-top: 14px;
-    border: none
-}
-
-.button-slider:active {
-    width: 280px;
-    height: 40px;
-    color: var(--special-yellow-dark);
-    background-color: var(--basic-black);
-    border: none;
 }
 
 .slider-2 {
@@ -243,12 +307,6 @@ nav h2: {
     color: var(--basic-white);
 }
 
-.rectangle {
-    width: 80px;
-    height: 7px;
-    background-color: var(--special-yellow-dark);
-}
-
 .social-items {
     list-style: none;
 }
@@ -261,8 +319,58 @@ nav h2: {
     display: none
 }
 
-.rectangle-slider {
-    width: 7px;
-    height: 320px;
-    background-color: var(--basic-black);
+/* каталог */
+
+.catalog-item {
+    font-weight: 800;
+    font-size: 47px;
+    line-height: 58px;
+}
+
+.crumbs {
+    list-style: none;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.crumbs li {
+    display: inline;
+    margin-right: 40px;
+    opacity: 0.3;
+}
+
+.crumbs li::after {
+    padding: 0 16px;
+    content: ">";
+    color: var(--basic-black);
+    background-image: url(/img/plus.svg);
+}
+
+.legend {
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.1em;
+}
+
+.filter-ul {
+    list-style: none;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.products-items {
+    list-style: none;
+}
+
+.products-items h3 {
+    font-weight: 800;
+    line-height: 22px;
+    letter-spacing: 0.05em;
 }

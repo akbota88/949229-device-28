@@ -59,7 +59,7 @@
           </li>
         </ul>
       </nav>
-      <ul>
+      <ul class="offer">
         <li>
           <a href="#">Доставка</a>
         </li>
@@ -73,9 +73,9 @@
     </div>
   </header>
   <main>
-    <h1 class="visability-hidden">Каталог гаджетов с оригинальным дизайном</h1>
-    <span>Моноподы для селфи</span>
-    <ul>
+    <h1 class="visually-hidden">Каталог гаджетов с оригинальным дизайном</h1>
+    <span class="catalog-item">Моноподы для селфи</span>
+    <ul class="crumbs">
       <li><a href="index.html">Главная</a></li>
       <li><a href="catalog.html">Каталог товаров</a></li>
       <li aria-current="page">
@@ -88,17 +88,17 @@
       </li>
     </ul>
     <section>
-      <h2 class="visually-hidden">Фильтр товаров</h2>
+      <h2>Фильтр</h2>
       <form action="https://echo.htmlacademy.ru" method="get">
         <fieldset>
-          <legend>Стоимость</legend>
+          <legend class="legend">Стоимость</legend>
           от 0
           <input type="range" name="cost" id="cost" min="0" max="10000" step="1000" value="5000">
           до 5000
         </fieldset>
         <fieldset>
-          <legend>Цвет</legend>
-          <ul role="none">
+          <legend class="legend">Цвет</legend>
+          <ul class="filter-ul">
             <li>
               <input type="checkbox" name="black" id="filter-black">
               <label for="filter-black">Чёрный</label>
@@ -122,15 +122,15 @@
           </ul>
         </fieldset>
         <fieldset>
-          <legend>Bluetooth</legend>
-          <ul role="none">
+          <legend class="legend">Bluetooth</legend>
+          <ul class="filter-ul">
             <li>
-              <label for="filter-bluetooth-available">Есть</label>
               <input type="radio" name="bluetooth" id="filter-bluetooth-available" value="bluetooth-available" checked>
+              <label for="filter-bluetooth-available">Есть</label>
             </li>
             <li>
-              <label for="filter-bluetooth-nope">Нет</label>
               <input type="radio" name="bluetooth" id="filter-bluetooth-nope" value="bluetooth-nope">
+              <label for="filter-bluetooth-nope">Нет</label>
             </li>
           </ul>
           <button type="submit">Показать</button>
@@ -138,8 +138,7 @@
       </form>
     </section>
     <section class="sorting">
-      <h2 class="visually-hidden">Сортировка</h2>
-      <span>Сортировка</span>
+      <h2>Сортировка</h2>
       <button type="button">По цене</button>
       <button type="button">По типу</button>
       <button type="button">По популярности</button>
@@ -147,41 +146,41 @@
       <button type="button">вниз</button>
     </section>
     <section class="products-monopods">
-      <h2>Моноподы для селфи</h2>
-      <ul>
-        <li>
-          <h3>Любительская селфи-палка</h3>
-          <span>500 руб.</span>
+      <h2 class="visually-hidden">Моноподы для селфи</h2>
+      <ul class="products-items">
+        <li>gw
           <p>
             <img src="img/catalog/item_1.png" width="360" height="380" alt="Любительская селфи-палка">
           </p>
+          <h3>Любительская селфи-палка</h3>
+          <span>500 руб.</span>
           <button type="button">В корзину</button>
           <button type="button">Добавить к сравнению</button>
         </li>
         <li>
-          <h3>Профессиональная селфи-палка</h3>
-          <span>1500 руб.</span>
           <p>
             <img src="img/catalog/item_2.png" width="360" height="380" alt="Профессиональная селфи-палка">
           </p>
+          <h3>Профессиональная селфи-палка</h3>
+          <span>1500 руб.</span>
           <button type="button">В корзину</button>
           <button type="button">Добавить к сравнению</button>
         </li>
         <li>
-          <h3>Непотопляемая селфи-палка</h3>
-          <span>2500 руб.</span>
           <p>
             <img src="img/catalog/item_3.png" width="360" height="380" alt="Непотопляемая селфи-палка">
           </p>
+          <h3>Непотопляемая селфи-палка</h3>
+          <span>2500 руб.</span>
           <button type="button">В корзину</button>
           <button type="button">Добавить к сравнению</button>
         </li>
         <li>
-          <h3>Селфи-палка «Следуй за мной»</h3>
-          <span>4900 руб.</span>
           <p>
             <img src="img/catalog/item_4.png" width="360" height="380" alt="Непотопляемая селфи-палка">
           </p>
+          <h3>Селфи-палка «Следуй за мной»</h3>
+          <span>4900 руб.</span>
           <span>New</span>
           <button type="button">В корзину</button>
           <button type="button">Добавить к сравнению</button>
@@ -210,7 +209,8 @@
     <div class="container">
       <div class="footer-top">
         <a>
-          <img src="img/logo_footer.svg" width="164" height="35" alt="Логотип Интернет магазина гаджетов с оригинальным дизайном">
+          <img src="img/logo_footer.svg" width="164" height="35"
+            alt="Логотип Интернет магазина гаджетов с оригинальным дизайном">
         </a>
         <ul class="user-navigation footer-navigation">
           <li>
