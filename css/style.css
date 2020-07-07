@@ -132,12 +132,6 @@ img {
     background-color: transparent;
 }
 
-.header-middle input {
-    background-color: transparent;
-    text-align: right;
-    border: none;
-}
-
 .user-navigation {
     list-style: none;
     font-family: "Open Sans", Arial, Helvetica, sans-serif;
