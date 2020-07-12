@@ -450,29 +450,33 @@ table {
 
 .popular {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+    align-items: flex-start;
     padding: 0;
     margin: 0;
     list-style: none;
-    margin-bottom: -136px;
+    margin-bottom: 84px;
 }
 
 .popular li {
+    width: 160px;
     margin: 0;
     padding: 0;
 }
-
 .popular a {
-    display: inline-block;
-    text-align: center;
     color: var(--basic-black);
     font-weight: 800;
     line-height: 22px;
     letter-spacing: 0.05em;
-    outline: 1px dotted black;
+}
+.popular-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: var(--special-yellow-dark);
-    width: 160px;
-    height: 160px;
+    min-height: 160px;
     margin-bottom: 38px;
 }
 
@@ -482,32 +486,32 @@ table {
     line-height: 22px;
     letter-spacing: 0.05em;
 }
-
+.popular li:nth-child(4) span {
+    letter-spacing: normal;
+}
 /* слайдер-2 */
-
-.background-grey {
-    background-color: var(--basic-gray-light);
-    padding-top: 288px;
+.slider-2 {
+    position: relative;
+}
+.slider-2::before {
+content: "";
+min-height: 300px;
+background-color: var(--basic-half-gray);
+position: absolute;
+top: 50px;
 }
 
 .slider-2_flex {
     display: flex;
     justify-content: space-between;
     position: relative;
-    top: 220px;
 }
 
-.bota {
-    position: relative;
-    top: -20;
-    margin-top: 0;
-}
 
 .slider-buttons {
     padding-top: 88px;
-    padding-left: 0;
     border-right: 7px solid black;
-    width: 284px;
+    max-width: 284px;
 }
 
 .slider-2_img {
@@ -647,8 +651,25 @@ table {
 .about {
     min-width: 473px;
     margin-right: 127px;
+    position: relative;
 }
-
+.about::before {
+    content: "";
+    background-color: var(--basic-black);
+    min-height: 7px;
+    min-width: 80px;
+    position: absolute;
+}
+.contacts {
+    position: relative;
+}
+.contacts::before {
+    content: "";
+    background-color: var(--basic-black);
+    min-height: 7px;
+    min-width: 80px;
+    position: absolute;
+}
 .contacts img {
     margin-bottom: 81px;
 }
